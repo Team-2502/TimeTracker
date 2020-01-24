@@ -11,7 +11,7 @@ import java.io.IOException;
 @SuppressWarnings("All")
 public class SlackApp {
 
-    private static final String TOKEN = "xoxb-128117363280-908670379523-a5cmaOGBp2L38gg3Zacm5zLW";
+    private static final String TOKEN = "removed slack token yikes";
 
     private final SlackletService slack;
     private final JsonData timeTracker;
