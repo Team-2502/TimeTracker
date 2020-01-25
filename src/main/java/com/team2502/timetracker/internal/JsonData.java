@@ -43,6 +43,10 @@ public class JsonData {
         this.users = this.data.getJSONObject("users");
     }
 
+    public boolean userExists(String name) {
+        return users.has(name);
+    }
+
     public void createUser(String name) {
         users.put(name, new JSONObject()
                 .put("logged_in", false)
@@ -68,6 +72,16 @@ public class JsonData {
         }else timeData.put(new JSONObject().put("start", LocalDateTime.now().format(TIME_FORMAT)));
 
         users.getJSONObject(name).put("logged_in", !loggedIn);
+    }
+
+    public void addTimeData(String name, LocalDateTime start, LocalDateTime end) {
+        if(!users.has(name))
+            throw new IllegalArgumentException("User does not exist");
+
+        JSONObject timeData = new JSONObject();
+        timeData.put("start", start.format(TIME_FORMAT));
+        timeData.put("end", end.format(TIME_FORMAT));
+        users.getJSONObject(name).getJSONArray("time_data").put(timeData);
     }
 
     public void recalculateTotalTimes() {
