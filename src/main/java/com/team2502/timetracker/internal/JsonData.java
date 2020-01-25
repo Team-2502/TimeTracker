@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * Must start with this in json file:
@@ -15,7 +15,7 @@ import java.util.Iterator;
  *
  * Json data format:
  * {"users": {
- *     "Biil N" : {
+ *     "Bill N" : {
  *         "time_data": [
  *             {
  *                 "start": "2020-01-24T16:07:20.559",
@@ -103,6 +103,16 @@ public class JsonData {
 
             user.put("total_time", totalTime);
         }
+    }
+
+    public User[] getLeaderBoard() {
+        String[] names = getUsers();
+        User[] leaderboard = new User[names.length];
+        for(int i = 0; i < names.length; i++)
+            leaderboard[i] = new User(names[i], getUserTotalTime(names[i]));
+
+        Arrays.sort(leaderboard, (a,b) -> (int)(b.totalTime - a.totalTime));
+        return leaderboard;
     }
 
     public boolean userIsLoggedIn(String name) {
