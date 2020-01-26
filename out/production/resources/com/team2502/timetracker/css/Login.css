@@ -1,0 +1,14 @@
+AnchorPane {
+    -fx-background-color: #5A5A5A;
+}
+
+.button{
+    /*-fx-background-color: WHITE;*/
+    -fx-text-fill: #5A5A5A;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.combo-box .list-cell{
+    -fx-text-fill: #5A5A5A;
+    -fx-font-family: "Segoe UI Semibold";
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.team2502.TimeTracker.main" target="1.8" />
+      <module name="com.team2502.TimeTracker.test" target="1.8" />
+      <module name="com.team2502e.TimeTracker.main" target="1.8" />
+      <module name="com.team2502e.TimeTracker.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

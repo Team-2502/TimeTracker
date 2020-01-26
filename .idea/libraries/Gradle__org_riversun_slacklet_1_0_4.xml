@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.riversun:slacklet:1.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.riversun/slacklet/1.0.4/2ef7c12a67a2359e911779cac4fa1b54f862f41a/slacklet-1.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.riversun/slacklet/1.0.4/fabf9d87b26e9cc094d493fa6114321e7078e557/slacklet-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

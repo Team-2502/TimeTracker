@@ -17,3 +17,21 @@ dependencies {
     compile 'org.json:json:20190722'
     compile 'org.riversun:slacklet:1.0.4'
 }
+
+sourceSets {
+    main {
+        java { srcDirs = ['src/java'] }
+        resources { srcDirs = ['src/resources'] }
+    }
+
+//    test {
+//        java { srcDirs = ['src/test/java'] }
+//        resources { srcDirs = ['src/test/resources'] }
+//    }
+}
+
+
+task runvis(dependsOn: 'build', type: JavaExec) {
+    main = 'com.team2502.timetracker.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
