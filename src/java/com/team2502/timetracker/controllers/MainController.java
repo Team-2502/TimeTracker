@@ -33,12 +33,12 @@ public class MainController implements Initializable {
     private Button createUser;
 
     private JsonData dataFiles;
-    private TextInputDialog dialog;
+    private TextInputDialog dialog = new TextInputDialog();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try { dataFiles = new JsonData("data.json"); }
-        catch(Exception e) { e.printStackTrace(); }
+        catch(Exception e) { errorPopup(e); }
 
         // TODO: actions for menu
         Menu home = menuBar.getMenus().get(0);
@@ -58,10 +58,9 @@ public class MainController implements Initializable {
         login.setOnAction(e -> {
             dataFiles.toggleUserLogin(dropDown.getValue());
             login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
-            try { dataFiles.store(); }catch(Exception _e) { _e.printStackTrace(); }
+            try { dataFiles.store(); }catch(Exception _e) { errorPopup(_e); }
         });
 
-        dialog = new TextInputDialog("Name Here");
         dialog.setTitle("Add User");
         dialog.setHeaderText("Please provide your first name and last initial");
         dialog.setGraphic(new ImageView(new Image(String.valueOf(TimeTracker.class.getResource("images/TalonLogo.png")), 75, 75, true, true)));
@@ -71,16 +70,19 @@ public class MainController implements Initializable {
             Optional<String> result = dialog.showAndWait();
             if(result.isPresent()) {
                 String name = result.get();
-                if(dataFiles.userExists(name)) {
-                    //TODO: Pop-up saying that user already exists
-                }else {
+                if(!dataFiles.userExists(name)) {
                     dataFiles.createUser(name);
                     dropDown.getItems().add(name);
                     dropDown.getSelectionModel().select(dropDown.getItems().size() - 1);
+                    dialog.getEditor().setText("");
                 }
             }
         });
 
         anchorPane.requestFocus();
+    }
+
+    private void errorPopup(Exception e) {
+        new Alert(Alert.AlertType.ERROR, "An error occurred:\n"+e.toString(), ButtonType.OK).show();
     }
 }
