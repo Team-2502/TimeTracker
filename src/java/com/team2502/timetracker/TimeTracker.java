@@ -7,15 +7,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class TimeTracker extends Application
-{
+public class TimeTracker extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
-        primaryStage.setTitle("Time Tracker");
+    public void start(Stage primaryStage) throws Exception {
         Parent mainParent = FXMLLoader.load(getClass().getResource("fxml/main.fxml"));
-        Scene mainScene = new Scene(new Group(mainParent), 600, 400);
+        Scene mainScene = new Scene(new Group(mainParent));
+        primaryStage.setTitle("Time Tracker");
         primaryStage.setScene(mainScene);
         primaryStage.show();
     }

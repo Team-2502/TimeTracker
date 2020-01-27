@@ -4,91 +4,83 @@ import com.team2502.timetracker.TimeTracker;
 import com.team2502.timetracker.internal.JsonData;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextInputDialog;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class MainController implements Initializable
-{
-    @FXML
-    AnchorPane anchorPane;
+@SuppressWarnings("All")
+public class MainController implements Initializable {
 
     @FXML
-    ComboBox<String> dropDown;
+    private AnchorPane anchorPane;
 
     @FXML
-    Button createUser;
+    private MenuBar menuBar;
 
     @FXML
-    Button login;
+    private ComboBox<String> dropDown;
 
     @FXML
-    Button recalculateTotalTimes;
+    private Button login;
+
+    @FXML
+    private Button createUser;
 
     private JsonData dataFiles;
-    TextInputDialog dialog = new TextInputDialog("Ritik Mishra");
+    private TextInputDialog dialog;
 
     @Override
-    public void initialize(URL location, ResourceBundle resources)
-    {
+    public void initialize(URL location, ResourceBundle resources) {
+        try { dataFiles = new JsonData("data.json"); }
+        catch(Exception e) { e.printStackTrace(); }
 
-        dialog.setTitle("Add User");
-        dialog.setHeaderText("Use First And Last Names");
-        dialog.setGraphic(new ImageView(new Image(String.valueOf(TimeTracker.class.getResource("images/TalonLogo.png")), 75, 75, true, true)));
-        dialog.setContentText("Please enter your name:");
+        // TODO: actions for menu
+        Menu home = menuBar.getMenus().get(0);
+        Menu leaderboard = menuBar.getMenus().get(1);
+        Menu settings = menuBar.getMenus().get(2);
 
-        try
-        {
-            dataFiles = new JsonData("data.json");
-            dataFiles.store();
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-        }
+        home.setOnAction(e -> System.out.println("Home"));
+        leaderboard.setOnAction(e -> System.out.println("Leaderboard"));
+        settings.setOnAction(e -> System.out.println("Settings"));
 
-        for(String user : dataFiles.getUsers())
-        {
-            dropDown.getItems().add(user);
-        }
+        dropDown.getItems().addAll(Arrays.asList(dataFiles.getUsers()));
+        dropDown.setOnAction(e -> login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login"));
+        if(!dropDown.getItems().isEmpty())
+            dropDown.getSelectionModel().select(0);
 
-        createUser.setOnAction(e -> {
-            Optional<String> result = dialog.showAndWait();
-            if(result.isPresent())
-            {
-                String name = result.get();
-                dataFiles.createUser(name);
-                dropDown.getItems().add(name);
-                dropDown.getSelectionModel().select(dropDown.getItems().size() - 1);
-            }
-        });
-
-//       login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
+        login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
         login.setOnAction(e -> {
             dataFiles.toggleUserLogin(dropDown.getValue());
             login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
-            try {dataFiles.store();}
-            catch(IOException f)
-            {
-                f.printStackTrace();
+            try { dataFiles.store(); }catch(Exception _e) { _e.printStackTrace(); }
+        });
+
+        dialog = new TextInputDialog("Name Here");
+        dialog.setTitle("Add User");
+        dialog.setHeaderText("Please provide your first name and last initial");
+        dialog.setGraphic(new ImageView(new Image(String.valueOf(TimeTracker.class.getResource("images/TalonLogo.png")), 75, 75, true, true)));
+        dialog.setContentText("Please enter your name:");
+
+        createUser.setOnAction(e -> {
+            Optional<String> result = dialog.showAndWait();
+            if(result.isPresent()) {
+                String name = result.get();
+                if(dataFiles.userExists(name)) {
+                    //TODO: Pop-up saying that user already exists
+                }else {
+                    dataFiles.createUser(name);
+                    dropDown.getItems().add(name);
+                    dropDown.getSelectionModel().select(dropDown.getItems().size() - 1);
+                }
             }
         });
 
-
-        dropDown.setOnAction(e -> {
-            login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
-        });
-
-//        recalculateTotalTimes.setOnAction(e -> dataFiles.recalculateTotalTimes());
-//        anchorPane.getChildren().add(recalculateTotalTimes);
         anchorPane.requestFocus();
     }
 }
