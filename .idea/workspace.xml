@@ -1,39 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="com.team2502.TimeTracker.main:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6f43dabd-75b0-4355-824e-0c5b550789be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_websocket_javax_websocket_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpmime_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_tyrus_bundles_tyrus_standalone_client_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_json_json_20190722.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_riversun_slacklet_1_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_threeten_threetenbp_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_10_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_11_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_12_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_13_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_14_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_15_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_16_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_21_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_23_2020 4.23.26 PM.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_24_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_26_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_27_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_5_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_6_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_7_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_8_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv/Time Tracker 2020 - 1_9_2020.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.team2502.TimeTracker.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/app/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/app/TimeTracker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/internal/JsonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/JsonData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/internal/JsonStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/JsonStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/internal/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/internal/util/CsvToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/util/CsvToJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2502/timetracker/slack/SlackApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/slack/SlackApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/team2502/timetracker/app/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/com/team2502/timetracker/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/team2502/timetracker/app/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/team2502/timetracker/app/TalonLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/com/team2502/timetracker/images/TalonLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/TimeTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/TimeTracker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/internal/JsonData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/team2502/timetracker/internal/JsonData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/TimeTracker-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/TimeTracker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/team2502/timetracker/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/team2502/timetracker/css/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/team2502/timetracker/main.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/team2502/timetracker/TimeTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/team2502/timetracker/TimeTracker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/team2502/timetracker/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/team2502/timetracker/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/com/team2502/timetracker/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/com/team2502/timetracker/fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -43,6 +59,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -67,49 +86,64 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+            <state relative-caret-position="78">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1391#1464#0" expanded="true" />
-                <element signature="e#1391#1464#0" expanded="true" />
-                <element signature="e#1474#1576#0" expanded="true" />
-                <element signature="e#1474#1576#0" expanded="true" />
-                <element signature="e#1688#1958#0" expanded="true" />
-                <element signature="e#1688#1958#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="11" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/css/Login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/util/CsvToJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1517">
+              <caret line="610" column="43" selection-start-line="610" selection-start-column="43" selection-end-line="610" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -119,9 +153,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>main</find>
+      <find>Bill</find>
+      <find>Asu</find>
+      <find>asa</find>
+      <find>sart</find>
+      <find>rah</find>
+      <find>adi</find>
+      <find>name</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,22 +180,26 @@
         <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/mainController.java" />
         <option value="$PROJECT_DIR$/src/resources/com.team2502.timetracker.fxml/Main.fxml" />
         <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/Main.fxml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/main.fxml" />
-        <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/Main.java" />
-        <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java" />
         <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/JsonData.java" />
         <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/app/App.java" />
-        <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main.fxml" />
         <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/css/Login.css" />
+        <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main1.fxml" />
+        <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/Bill.fxml" />
+        <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/test.fxml" />
+        <option value="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main.fxml" />
+        <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java" />
+        <option value="$PROJECT_DIR$/src/java/com/team2502/timetracker/Main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1366" />
-    <option name="height" value="741" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="width" value="1362" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,7 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,82 +218,75 @@
             <path>
               <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
               <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
               <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TimeTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TimeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="timetracker" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TimeTracker" type="58d84e3e:PackageViewProjectNode" />
+              <item name="com.team2502.TimeTracker" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="58d84e3e:PackageViewProjectNode" />
+              <item name="com.team2502.TimeTracker" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="com.team2502.TimeTracker.main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="58d84e3e:PackageViewProjectNode" />
+              <item name="com.team2502.TimeTracker" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="com.team2502.TimeTracker.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.team2502.timetracker" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="58d84e3e:PackageViewProjectNode" />
+              <item name="com.team2502.TimeTracker" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="com.team2502.TimeTracker.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.team2502.timetracker" type="1f31426a:PackageElementNode" />
+              <item name="controllers" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="58d84e3e:PackageViewProjectNode" />
+              <item name="com.team2502.TimeTracker" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="com.team2502.TimeTracker.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.team2502.timetracker" type="1f31426a:PackageElementNode" />
+              <item name="fxml" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="TimeTracker" type="58d84e3e:PackageViewProjectNode" />
+              <item name="com.team2502.TimeTracker" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="com.team2502.TimeTracker.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.team2502.timetracker" type="1f31426a:PackageElementNode" />
+              <item name="internal" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580075618316" />
@@ -249,7 +294,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2542373" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -259,11 +304,11 @@
       <recent name="com.team2502.timetracker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources" />
+      <recent name="$PROJECT_DIR$/csv" />
       <recent name="$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml" />
       <recent name="$PROJECT_DIR$/src/resources/com/team2502/timetracker" />
       <recent name="$PROJECT_DIR$/src/resources/com/team2502/timetracker/images" />
-      <recent name="$PROJECT_DIR$/src/resources/com/team2502/timetracker/css" />
-      <recent name="$PROJECT_DIR$/src/resources/com.team2502.timetracker/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,7 +323,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TimeTracker">
+  <component name="RunManager" selected="Gradle.TimeTracker [jar]">
+    <configuration name="CsvToJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.team2502.timetracker.internal.util.CsvToJson" />
+      <module name="com.team2502.TimeTracker.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team2502.timetracker.internal.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TimeTracker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.team2502.timetracker.TimeTracker" />
       <module name="com.team2502.TimeTracker.main" />
@@ -313,6 +372,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TimeTracker [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeTracker [runvis]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runvis" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -321,6 +418,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -330,11 +428,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.TimeTracker" />
-      <item itemvalue="Application.TimeTracker" />
+      <item itemvalue="Application.CsvToJson" />
+      <item itemvalue="Gradle.TimeTracker [runvis]" />
+      <item itemvalue="Gradle.TimeTracker [jar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TimeTracker [jar]" />
+        <item itemvalue="Gradle.TimeTracker [runvis]" />
         <item itemvalue="Application.TimeTracker" />
+        <item itemvalue="Application.CsvToJson" />
         <item itemvalue="Application.TimeTracker" />
       </list>
     </recent_temporary>
@@ -350,14 +453,81 @@
       <option name="presentableId" value="Default" />
       <updated>1580067789545</updated>
       <workItem from="1580067791154" duration="7691000" />
+      <workItem from="1580088164955" duration="18497000" />
+      <workItem from="1580180313115" duration="1372000" />
+      <workItem from="1580245789836" duration="8898000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor of Controller and TimeTracker. Bug fixes and some more checks to prevent duplicate users. Added menu support (doesnt do anything yet)">
+      <created>1580104076201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580104076201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Some UI changes. Added menu bar. Can't get resizing to work ._.">
+      <created>1580104121128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580104121128</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added error popup :)">
+      <created>1580105472262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580105472263</updated>
+    </task>
+    <task id="LOCAL-00004" summary="No resizing :(">
+      <created>1580172934002</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580172934002</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Menu trickery...">
+      <created>1580181428955</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580181428955</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Displaying of hours">
+      <created>1580247183756</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580247183757</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bug fix">
+      <created>1580247901431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580247901431</updated>
+    </task>
+    <task id="LOCAL-00008" summary="bug fix">
+      <created>1580249671059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580249671059</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated json file">
+      <created>1580251107445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580251107445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7691000" />
+    <option name="totallyTimeSpent" value="36458000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="741" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -365,19 +535,19 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20166163" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32973805" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.10410557" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.32973805" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.3287879" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32973805" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32973805" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.32973805" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -393,9 +563,54 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19033232" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.10410557" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32973805" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32973805" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32973805" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.1202346" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32930514" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor of Controller and TimeTracker. Bug fixes and some more checks to prevent duplicate users. Added menu support (doesnt do anything yet)" />
+    <MESSAGE value="Some UI changes. Added menu bar. Can't get resizing to work ._." />
+    <MESSAGE value="Added error popup :)" />
+    <MESSAGE value="No resizing :(" />
+    <MESSAGE value="Menu trickery..." />
+    <MESSAGE value="Displaying of hours" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="updated json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated json file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Alert.java">
@@ -438,34 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#686#694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/app/App.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/image/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
@@ -476,51 +664,146 @@
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/css/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/hello.java" />
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main1.fxml" />
     <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/JsonData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="73">
+          <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController1.java" />
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TextInputDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="389" column="18" selection-start-line="389" selection-start-column="18" selection-end-line="389" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Alert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="241" column="11" selection-start-line="241" selection-start-column="11" selection-end-line="241" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/Bill.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/test.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/Time Tracker 2020 - 1%2F26%2F2020.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/Time Tracker 2020 - 1%2F5%2F2020.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/internal/util/CsvToJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1517">
+          <caret line="610" column="43" selection-start-line="610" selection-start-column="43" selection-end-line="610" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/TimeTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="78">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1391#1464#0" expanded="true" />
-            <element signature="e#1391#1464#0" expanded="true" />
-            <element signature="e#1474#1576#0" expanded="true" />
-            <element signature="e#1474#1576#0" expanded="true" />
-            <element signature="e#1688#1958#0" expanded="true" />
-            <element signature="e#1688#1958#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/fxml/main.fxml">
+    <entry file="file://$PROJECT_DIR$/src/java/com/team2502/timetracker/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/com/team2502/timetracker/css/Login.css">
+    <entry file="file://$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
@@ -530,6 +813,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>com.team2502.TimeTracker.main:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -581,7 +865,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2542373" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

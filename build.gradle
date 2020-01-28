@@ -32,6 +32,15 @@ sourceSets {
 
 
 task runvis(dependsOn: 'build', type: JavaExec) {
-    main = 'com.team2502.timetracker.Main'
+    main = 'com.team2502.timetracker.TimeTracker'
     classpath = sourceSets.main.runtimeClasspath
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.github.ezauton.visualizer.Main'
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
