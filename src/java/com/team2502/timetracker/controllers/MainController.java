@@ -75,8 +75,15 @@ public class MainController implements Initializable {
                     dropDown.getItems().add(name);
                     dropDown.getSelectionModel().select(dropDown.getItems().size() - 1);
                     dialog.getEditor().setText("");
+                }else {
+                    dropDown.getSelectionModel().select(name);
                 }
             }
+        });
+
+        anchorPane.widthProperty().addListener((observableValue, oldSceneWidth, newSceneWidth) -> {
+            System.out.println("Hello World");
+            login.setPrefWidth(newSceneWidth.intValue()/10);
         });
 
         anchorPane.requestFocus();

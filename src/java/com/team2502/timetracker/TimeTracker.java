@@ -15,6 +15,7 @@ public class TimeTracker extends Application {
         Scene mainScene = new Scene(new Group(mainParent));
         primaryStage.setTitle("Time Tracker");
         primaryStage.setScene(mainScene);
+        primaryStage.setResizable(false); // reeeeeeee
         primaryStage.show();
     }
 }
