@@ -40,14 +40,17 @@ public class MainController implements Initializable {
         try { dataFiles = new JsonData("data.json"); }
         catch(Exception e) { errorPopup(e); }
 
-        // TODO: actions for menu
         Menu home = menuBar.getMenus().get(0);
         Menu leaderboard = menuBar.getMenus().get(1);
         Menu settings = menuBar.getMenus().get(2);
+        menuBar.getMenus().forEach(this::setupMenu);
 
-        home.setOnAction(e -> System.out.println("Home"));
-        leaderboard.setOnAction(e -> System.out.println("Leaderboard"));
-        settings.setOnAction(e -> System.out.println("Settings"));
+//        home.setOnAction(e -> System.out.println("Home"));
+//        leaderboard.setOnAction(e -> System.out.println("Leaderboard"));
+//        settings.setOnAction(e -> System.out.println("Settings"));
+
+        leaderboard.setOnAction(e -> new Alert(Alert.AlertType.ERROR, "Leaderboards not here yet. soon tm", ButtonType.OK).show());
+        settings.setOnAction(e -> new Alert(Alert.AlertType.ERROR, "Settings not here yet. soon tm", ButtonType.OK).show());
 
         dropDown.getItems().addAll(Arrays.asList(dataFiles.getUsers()));
         dropDown.setOnAction(e -> login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login"));
@@ -81,15 +84,15 @@ public class MainController implements Initializable {
             }
         });
 
-        anchorPane.widthProperty().addListener((observableValue, oldSceneWidth, newSceneWidth) -> {
-            System.out.println("Hello World");
-            login.setPrefWidth(newSceneWidth.intValue()/10);
-        });
-
         anchorPane.requestFocus();
     }
 
+    private void setupMenu(Menu menu) {
+        menu.getItems().add(new MenuItem("dummy"));
+        menu.showingProperty().addListener((a,b,c) -> { if (c) menu.getItems().get(0).fire(); });
+    }
+
     private void errorPopup(Exception e) {
-        new Alert(Alert.AlertType.ERROR, "An error occurred:\n"+e.toString(), ButtonType.OK).show();
+        new Alert(Alert.AlertType.ERROR, "An error occurred:\n"+e.toString(), ButtonType.OK).showAndWait();
     }
 }
