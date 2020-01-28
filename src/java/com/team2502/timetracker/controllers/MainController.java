@@ -70,7 +70,7 @@ public class MainController implements Initializable {
         login.setOnAction(e -> {
             dataFiles.toggleUserLogin(dropDown.getValue());
             login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
-            hoursLabel.setText("Hours: " + dataFiles.getUserTotalTime(dropDown.getValue()));
+            hoursLabel.setText("Hours: " + dataFiles.getUserTotalTime(dropDown.getValue())/60);
             try { dataFiles.store(); }catch(Exception _e) { errorPopup(_e); }
         });
 
