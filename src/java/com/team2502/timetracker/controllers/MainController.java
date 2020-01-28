@@ -30,6 +30,9 @@ public class MainController implements Initializable {
     private Button login;
 
     @FXML
+    private Label hoursLabel;
+
+    @FXML
     private Button createUser;
 
     private JsonData dataFiles;
@@ -53,14 +56,21 @@ public class MainController implements Initializable {
         settings.setOnAction(e -> new Alert(Alert.AlertType.ERROR, "Settings not here yet. soon tm", ButtonType.OK).show());
 
         dropDown.getItems().addAll(Arrays.asList(dataFiles.getUsers()));
-        dropDown.setOnAction(e -> login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login"));
+        dropDown.setOnAction(e -> {
+            login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
+            hoursLabel.setText("Hours: " + dataFiles.getUserTotalTime(dropDown.getValue())/60);
+        });
+
         if(!dropDown.getItems().isEmpty())
             dropDown.getSelectionModel().select(0);
 
+        hoursLabel.setText("Hours: " + dataFiles.getUserTotalTime(dropDown.getValue())/60);
         login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
+
         login.setOnAction(e -> {
             dataFiles.toggleUserLogin(dropDown.getValue());
             login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
+            hoursLabel.setText("Hours: " + dataFiles.getUserTotalTime(dropDown.getValue()));
             try { dataFiles.store(); }catch(Exception _e) { errorPopup(_e); }
         });
 

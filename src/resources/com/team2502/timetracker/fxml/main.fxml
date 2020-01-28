@@ -31,5 +31,6 @@
       <Button fx:id="login" layoutX="349.0" layoutY="265.0" mnemonicParsing="false" text="Login" />
       <Button fx:id="createUser" layoutX="513.0" layoutY="359.0" mnemonicParsing="false" text="New User" />
       <ComboBox fx:id="dropDown" layoutX="199.0" layoutY="265.0" prefWidth="150.0" />
+      <Label fx:id="hoursLabel" layoutX="274.0" layoutY="300.0" text="Hours: 0" textFill="WHITE" />
    </children>
 </AnchorPane>
