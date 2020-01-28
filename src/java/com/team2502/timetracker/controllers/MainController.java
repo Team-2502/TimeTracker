@@ -83,6 +83,9 @@ public class MainController implements Initializable {
             Optional<String> result = dialog.showAndWait();
             if(result.isPresent()) {
                 String name = result.get();
+                if(name.equals(""))
+                    return;
+
                 if(!dataFiles.userExists(name)) {
                     dataFiles.createUser(name);
                     dropDown.getItems().add(name);
