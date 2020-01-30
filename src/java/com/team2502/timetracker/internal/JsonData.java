@@ -141,6 +141,7 @@ public class JsonData {
         for(int i = 0; keys.hasNext(); i++)
             names[i] = keys.next();
 
+        Arrays.sort(names);
         return names;
     }
 
