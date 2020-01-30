@@ -67,9 +67,14 @@ public class JsonData {
             JSONObject timeDataObj = timeData.getJSONObject(timeData.length()-1);
             LocalDateTime start = LocalDateTime.parse(timeDataObj.getString("start"));
             LocalDateTime end = LocalDateTime.now();
+            long min = ChronoUnit.MINUTES.between(start, end);
+
+            if(min > 12 * 60) { // signed in for more than 12 hours
+                timeDataObj.put("suspicious", true);
+            }
 
             timeDataObj.put("end", end.format(TIME_FORMAT));
-            users.getJSONObject(name).put("total_time", getUserTotalTime(name)+ChronoUnit.MINUTES.between(start, end));
+            users.getJSONObject(name).put("total_time", getUserTotalTime(name)+min);
         }else timeData.put(new JSONObject().put("start", LocalDateTime.now().format(TIME_FORMAT)));
 
         users.getJSONObject(name).put("logged_in", !loggedIn);
