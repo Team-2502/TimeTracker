@@ -44,6 +44,9 @@ public class CsvToJson {
                     if(parts[0] == null)
                         continue;
 
+                    if(parts[0].equals("") || parts[0].equals("Name"))
+                        continue;
+
                     if(!data.userExists(parts[0])) data.createUser(parts[0]);
                     try { data.addTimeData(parts[0], parse(date, parts[1]), parse(date, parts[2])); }
                     catch(Exception e) { /* Ignore error */ }
