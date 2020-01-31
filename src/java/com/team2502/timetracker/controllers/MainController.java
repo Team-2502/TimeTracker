@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Time;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -52,6 +53,8 @@ public class MainController implements Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
+        //TODO: Find a good way to resize when also moving height
+//        image.fitHeightProperty().bind(anchorPane.heightProperty().multiply(4));
         anchorPane.widthProperty().addListener(((observable, oldValue, newValue) -> {
             mainLabel.setLayoutX((newValue.doubleValue()/2) - mainLabel.getPrefWidth()/2);
             menuBar.setPrefWidth(newValue.intValue());
@@ -62,7 +65,9 @@ public class MainController implements Initializable
             createUser.setLayoutX(newValue.intValue() - 87);
         }));
 
-        anchorPane.heightProperty().addListener(((observable, oldValue, newValue) -> createUser.setLayoutY(newValue.intValue() - 41)));
+        anchorPane.heightProperty().addListener(((observable, oldValue, newValue) -> {
+            createUser.setLayoutY(newValue.intValue() - 41);
+        }));
 
         try { dataFiles = new JsonData("data.json"); }
         catch(Exception e) { errorPopup(e); }
@@ -140,6 +145,7 @@ public class MainController implements Initializable
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.setTitle("Leaderboard");
+        TimeTracker.leaderBoardStage.setResizable(false);
         TimeTracker.leaderBoardStage = stage;
         stage.show();
     }
