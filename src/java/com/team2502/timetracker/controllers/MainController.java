@@ -19,7 +19,6 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-@SuppressWarnings("All")
 public class MainController implements Initializable
 {
 
@@ -28,6 +27,9 @@ public class MainController implements Initializable
 
     @FXML
     private MenuBar menuBar;
+
+    @FXML
+    private Label mainLabel;
 
     @FXML
     private ComboBox<String> dropDown;
@@ -41,12 +43,27 @@ public class MainController implements Initializable
     @FXML
     private Button createUser;
 
+    @FXML
+    private ImageView image;
+
     private JsonData dataFiles;
     private TextInputDialog dialog = new TextInputDialog();
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
+        anchorPane.widthProperty().addListener(((observable, oldValue, newValue) -> {
+            mainLabel.setLayoutX((newValue.doubleValue()/2) - mainLabel.getPrefWidth()/2);
+            menuBar.setPrefWidth(newValue.intValue());
+            image.setLayoutX((newValue.doubleValue()/2) - (image.getFitWidth()/2));
+            dropDown.setLayoutX((newValue.doubleValue()/2) - 100);
+            login.setLayoutX((newValue.doubleValue()/2) + 50);
+            hoursLabel.setLayoutX((newValue.doubleValue()/2) - (hoursLabel.getPrefWidth() / 2));
+            createUser.setLayoutX(newValue.intValue() - 87);
+        }));
+
+        anchorPane.heightProperty().addListener(((observable, oldValue, newValue) -> createUser.setLayoutY(newValue.intValue() - 41)));
+
         try { dataFiles = new JsonData("data.json"); }
         catch(Exception e) { errorPopup(e); }
 
