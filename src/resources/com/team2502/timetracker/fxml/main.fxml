@@ -15,7 +15,7 @@
       <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="600.0">
         <menus>
           <Menu mnemonicParsing="false" text="Home" />
-          <Menu mnemonicParsing="false" text="Leaderboard" />
+          <Menu mnemonicParsing="false" text="Leaderboard" onAction="#toLeaderboard"/>
           <Menu mnemonicParsing="false" text="Settings" />
         </menus>
       </MenuBar>

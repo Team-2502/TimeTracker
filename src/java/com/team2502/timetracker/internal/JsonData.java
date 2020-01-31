@@ -117,7 +117,7 @@ public class JsonData {
         for(int i = 0; i < names.length; i++)
             leaderboard[i] = new User(names[i], getUserTotalTime(names[i]));
 
-        Arrays.sort(leaderboard, (a,b) -> (int)(b.totalTime - a.totalTime));
+        Arrays.sort(leaderboard, (a,b) -> (int)(b.getTotalTime() - a.getTotalTime()));
         return leaderboard;
     }
 
