@@ -32,7 +32,7 @@ sourceSets {
 
 
 task runvis(dependsOn: 'build', type: JavaExec) {
-    main = 'com.team2502.timetracker.TimeTracker'
+    main = 'com.team2502.timetracker.TimeTracker.java'
     classpath = sourceSets.main.runtimeClasspath
 }
 
