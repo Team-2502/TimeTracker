@@ -1,6 +1,5 @@
 package com.team2502.timetracker.internal;
 
-import javafx.collections.ObservableList;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -29,7 +28,6 @@ import java.util.*;
  * }}
  */
 
-@SuppressWarnings("All")
 public class JsonData {
 
     private static final DateTimeFormatter TIME_FORMAT = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
@@ -45,7 +43,7 @@ public class JsonData {
     }
 
     public boolean userExists(String name) {
-        return users.has(name);
+        return !users.has(name);
     }
 
     public void createUser(String name) {

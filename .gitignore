@@ -2,3 +2,17 @@
 \.idea/
 
 *.class
+
+*.bin
+
+.gradle/4.10.3/fileHashes/
+
+.gradle/4.10.3/javaCompile/
+
+.gradle/4.10.3/taskHistory/
+
+.gradle/buildOutputCleanup/
+
+build/libs/
+
+out/production/classes/META-INF/

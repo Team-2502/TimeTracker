@@ -94,7 +94,7 @@ public class MainController implements Initializable
                 if(name.equals(""))
                     return;
 
-                if(!dataFiles.userExists(name))
+                if(dataFiles.userExists(name))
                 {
                     dataFiles.createUser(name);
                     dropDown.getItems().add(name);

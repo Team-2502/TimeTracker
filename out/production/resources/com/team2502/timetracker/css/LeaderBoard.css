@@ -1,0 +1,7 @@
+.root {
+    -fx-background-color: grey;
+    -fx-background-image: url(../images/TalonLogo.png);
+    -fx-background-size: 400px, 400px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}

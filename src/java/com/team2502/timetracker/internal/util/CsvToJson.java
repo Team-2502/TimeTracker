@@ -18,14 +18,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@SuppressWarnings("All")
 public class CsvToJson {
 
     public static void main(String[] args) throws IOException {
         File directory = new File("csv");
         List<String> csvFiles;
         try (Stream<Path> paths = Files.walk(Paths.get(directory.getAbsolutePath()))) {
-            csvFiles = paths.filter(Files::isRegularFile).map(x -> x.toString()).collect(Collectors.toList());
+            csvFiles = paths.filter(Files::isRegularFile).map(Path::toString).collect(Collectors.toList());
         }catch(IOException e) {
             e.printStackTrace();
             return;
@@ -47,11 +46,11 @@ public class CsvToJson {
                     if(parts[0].equals("") || parts[0].equals("Name"))
                         continue;
 
-                    if(!data.userExists(parts[0])) data.createUser(parts[0]);
+                    if(data.userExists(parts[0])) data.createUser(parts[0]);
                     try { data.addTimeData(parts[0], parse(date, parts[1]), parse(date, parts[2])); }
                     catch(Exception e) { /* Ignore error */ }
                 }
-            }catch(IOException e) { throw e; }
+            }
         }
 
         data.recalculateTotalTimes();
