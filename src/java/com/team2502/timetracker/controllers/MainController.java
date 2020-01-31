@@ -145,8 +145,8 @@ public class MainController implements Initializable
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.setTitle("Leaderboard");
-        TimeTracker.leaderBoardStage.setResizable(false);
         TimeTracker.leaderBoardStage = stage;
+        TimeTracker.leaderBoardStage.setResizable(false);
         stage.show();
     }
 
