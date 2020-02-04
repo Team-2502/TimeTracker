@@ -70,6 +70,8 @@ public class MainController implements Initializable {
             errorPopup(e);
         }
 
+        dataFiles.recalculateTotalTimes();
+
 //        home.setOnAction(e -> System.out.println("Home"));
 //        leaderboard.setOnAction(e -> System.out.println("Leaderboard"));
 //        settings.setOnAction(e -> System.out.println("Settings"));

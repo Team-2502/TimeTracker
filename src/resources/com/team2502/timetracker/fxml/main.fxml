@@ -26,10 +26,10 @@
                             <image>
                                 <Image url="@../images/TalonLogo.png" />
                             </image></ImageView>
-                        <Button fx:id="login" layoutX="350.0" layoutY="265.0" mnemonicParsing="false" text="Login" />
+                        <Button fx:id="login" layoutX="345.0" layoutY="262.0" mnemonicParsing="false" text="Login" />
                         <Button fx:id="createUser" layoutX="513.0" layoutY="359.0" mnemonicParsing="false" text="New User" />
-                        <ComboBox fx:id="dropDown" layoutX="200.0" layoutY="265.0" prefWidth="150.0" />
-                        <Label fx:id="hoursLabel" alignment="CENTER" layoutX="246.0" layoutY="299.0" prefHeight="50.0" prefWidth="100.0" text="Hours: 0" textFill="WHITE">
+                        <ComboBox fx:id="dropDown" layoutX="195.0" layoutY="262.0" prefWidth="150.0" />
+                        <Label fx:id="hoursLabel" alignment="CENTER" layoutX="194.0" layoutY="302.0" prefHeight="50.0" prefWidth="205.0" text="Hours: 0" textFill="WHITE">
                             <font>
                                 <Font size="24.0" />
                             </font></Label>
