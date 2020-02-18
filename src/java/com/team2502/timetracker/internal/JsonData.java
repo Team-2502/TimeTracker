@@ -143,6 +143,10 @@ public class JsonData {
         return names;
     }
 
+    public String[] getLoggedInUsers() {
+        return Arrays.stream(getUsers()).filter(this::userIsLoggedIn).toArray(String[]::new);
+    }
+
     public void store() throws IOException {
         JsonStorage.writeJsonToFile(data, filePath);
     }
