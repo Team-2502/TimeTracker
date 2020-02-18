@@ -36,6 +36,12 @@ public class LeaderBoardController implements Initializable
     Label time3;
 
     @FXML
+    AnchorPane anchorPane;
+
+    @FXML
+    AnchorPane medalPane;
+
+    @FXML
     ScrollPane otherLeaderBoard;
 
     private JsonData jsonData;
@@ -47,6 +53,11 @@ public class LeaderBoardController implements Initializable
     }
 
     void init(){
+        anchorPane.widthProperty().addListener((observable, oldValue, newValue) -> {
+            medalPane.setLayoutX(newValue.doubleValue()/2 - medalPane.getWidth()/2);
+        });
+
+
         name1.setText(jsonData.getLeaderBoard()[0].getName());
         time1.setText("Hours: " +  String.format("%.2f", (double)jsonData.getLeaderBoard()[0].getTotalTime()/60));
         name2.setText(jsonData.getLeaderBoard()[1].getName());
@@ -100,6 +111,12 @@ public class LeaderBoardController implements Initializable
             anchorPane.getChildren().add(separator);
             vbox.getChildren().add(anchorPane);
             vbox.setSpacing(10);
+
+            otherLeaderBoard.widthProperty().addListener((observable, oldValue, newValue) -> {
+                time.setLayoutX(newValue.doubleValue() - 175);
+                imageView.setLayoutX(newValue.doubleValue() - 60);
+                separator.setPrefWidth(otherLeaderBoard.getWidth());
+            });
         }
         otherLeaderBoard.setContent(vbox);
     }
