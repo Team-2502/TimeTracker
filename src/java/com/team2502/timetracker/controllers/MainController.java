@@ -4,10 +4,17 @@ import com.team2502.timetracker.TimeTracker;
 import com.team2502.timetracker.internal.JsonData;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Font;
 
 import java.io.IOException;
 import java.net.URL;
@@ -44,13 +51,15 @@ public class MainController implements Initializable {
     @FXML
     private TabPane parentTabPane;
 
+    @FXML
+    private ScrollPane scrollPane;
+
     private JsonData dataFiles;
     private TextInputDialog dialog = new TextInputDialog();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //TODO: Find a good way to resize when also moving height
-//        image.fitHeightProperty().bind(anchorPane.heightProperty().multiply(4));
+        image.fitHeightProperty().bind(anchorPane.heightProperty().multiply(4));
         anchorPane.widthProperty().addListener(((observable, oldValue, newValue) -> {
             mainLabel.setLayoutX((newValue.doubleValue() / 2) - mainLabel.getPrefWidth() / 2);
             image.setLayoutX((newValue.doubleValue() / 2) - (image.getFitWidth() / 2));
@@ -60,10 +69,6 @@ public class MainController implements Initializable {
             createUser.setLayoutX(newValue.intValue() - 87);
         }));
 
-        anchorPane.heightProperty().addListener(((observable, oldValue, newValue) -> {
-            createUser.setLayoutY(newValue.intValue() - 41);
-        }));
-
         try {
             dataFiles = new JsonData("data.json");
         } catch (Exception e) {
@@ -71,12 +76,6 @@ public class MainController implements Initializable {
         }
 
         dataFiles.recalculateTotalTimes();
-
-//        home.setOnAction(e -> System.out.println("Home"));
-//        leaderboard.setOnAction(e -> System.out.println("Leaderboard"));
-//        settings.setOnAction(e -> System.out.println("Settings"));
-
-//        leaderboard.setOnAction(e -> new Alert(Alert.AlertType.ERROR, "Leaderboards not here yet. soon tm", ButtonType.OK).show());
 
         dropDown.getItems().addAll(Arrays.asList(dataFiles.getUsers()));
         dropDown.setOnAction(e -> {
@@ -94,6 +93,8 @@ public class MainController implements Initializable {
             dataFiles.toggleUserLogin(dropDown.getValue());
             login.setText(dataFiles.userIsLoggedIn(dropDown.getValue()) ? "Logout" : "Login");
             hoursLabel.setText("Hours: " + dataFiles.getUserTotalTime(dropDown.getValue()) / 60);
+            setupScrollPane();
+
             try {
                 dataFiles.store();
             } catch (Exception _e) {
@@ -124,7 +125,68 @@ public class MainController implements Initializable {
             }
         });
 
+        setupScrollPane();
         anchorPane.requestFocus();
+    }
+
+    private void setupScrollPane() {
+        VBox vBox = new VBox();
+        String[] users = dataFiles.getLoggedInUsers();
+        for(int i = 0; i < users.length; i++) {
+            AnchorPane anchorPane = new AnchorPane();
+            Label number = new Label(String.valueOf(i+1));
+            Label name = new Label(users[i]);
+            Button button = new Button("Logout");
+            Separator separator =  new Separator();
+            number.setFont(Font.font("Impact", 16));
+            name.setFont(Font.font("Impact", 16));
+
+            number.setBackground(new Background(new BackgroundFill(Paint.valueOf("Grey"), null, null)));
+            number.setAlignment(Pos.CENTER);
+            number.setPrefWidth(25);
+            number.setPrefHeight(25);
+            number.setLayoutX(10);
+            number.setLayoutY(10);
+
+            name.setAlignment(Pos.CENTER);
+            name.setPrefHeight(25);
+            name.setLayoutX(50);
+            name.setLayoutY(10);
+
+            button.setAlignment(Pos.CENTER);
+            button.setPrefWidth(100);
+            button.setPrefHeight(25);
+            button.setLayoutX(420);
+            button.setLayoutY(10);
+
+            separator.setPrefWidth(scrollPane.getPrefWidth());
+            separator.setPrefHeight(5);
+            anchorPane.getChildren().add(number);
+            anchorPane.getChildren().add(name);
+            anchorPane.getChildren().add(button);
+            anchorPane.getChildren().add(separator);
+            vBox.getChildren().add(anchorPane);
+            vBox.setSpacing(10);
+
+            scrollPane.widthProperty().addListener((observable, oldValue, newValue) -> {
+                button.setLayoutX(newValue.intValue() - 130);
+                separator.setPrefWidth(scrollPane.getWidth());
+            });
+
+            String user = users[i];
+            button.setOnAction(e -> {
+                dataFiles.toggleUserLogin(user);
+                setupScrollPane();
+
+                try {
+                    dataFiles.store();
+                } catch (Exception _e) {
+                    errorPopup(_e);
+                }
+            });
+        }
+
+        scrollPane.setContent(vBox);
     }
 
     public void toLeaderboard() throws IOException {
@@ -132,13 +194,6 @@ public class MainController implements Initializable {
         leaderBoardController.setJsonData(dataFiles);
         leaderBoardController.init();
 
-    }
-
-    private void setupMenu(Menu menu) {
-        menu.getItems().add(new MenuItem("dummy"));
-        menu.showingProperty().addListener((a, b, c) -> {
-            if (c) menu.getItems().get(0).fire();
-        });
     }
 
     private void errorPopup(Exception e) {
