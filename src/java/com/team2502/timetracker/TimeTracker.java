@@ -9,16 +9,15 @@ import javafx.stage.Stage;
 
 public class TimeTracker extends Application {
 
-    public static Stage leaderBoardStage;
-
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
+    public void start(Stage primaryStage) throws Exception {
         Parent mainParent = FXMLLoader.load(getClass().getResource("fxml/main.fxml"));
         Scene mainScene = new Scene(mainParent);
+
+        primaryStage.setMinWidth(600);
+        primaryStage.setMinHeight(620);
         primaryStage.setTitle("Time Tracker");
         primaryStage.setScene(mainScene);
-//        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }
