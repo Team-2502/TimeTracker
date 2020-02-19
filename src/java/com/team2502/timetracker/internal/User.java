@@ -1,6 +1,5 @@
 package com.team2502.timetracker.internal;
 
-
 public class User {
 
     private final String name;
@@ -11,13 +10,11 @@ public class User {
         this.totalTime = totalTime;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public long getTotalTime()
-    {
+    public long getTotalTime() {
         return totalTime;
     }
 }

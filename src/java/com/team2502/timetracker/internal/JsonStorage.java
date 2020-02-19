@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+@SuppressWarnings("All")
 public class JsonStorage {
 
     public static void writeJsonToFile(JSONObject json, String path) throws IOException {

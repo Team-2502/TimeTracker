@@ -110,16 +110,6 @@ public class JsonData {
         }
     }
 
-    public User[] getLeaderBoard() {
-        String[] names = getUsers();
-        User[] leaderboard = new User[names.length];
-        for(int i = 0; i < names.length; i++)
-            leaderboard[i] = new User(names[i], getUserTotalTime(names[i]));
-
-        Arrays.sort(leaderboard, (a,b) -> (int)(b.getTotalTime() - a.getTotalTime()));
-        return leaderboard;
-    }
-
     public boolean userIsLoggedIn(String name) {
         if(!users.has(name))
             throw new IllegalArgumentException("User does not exist");
@@ -142,6 +132,16 @@ public class JsonData {
 
         Arrays.sort(names);
         return names;
+    }
+
+    public User[] getLeaderBoard() {
+        String[] names = getUsers();
+        User[] leaderBoard = new User[names.length];
+        for(int i = 0; i < names.length; i++)
+            leaderBoard[i] = new User(names[i], getUserTotalTime(names[i]));
+
+        Arrays.sort(leaderBoard, (a,b) -> (int)(b.getTotalTime() - a.getTotalTime()));
+        return leaderBoard;
     }
 
     public String[] getLoggedInUsers() {
