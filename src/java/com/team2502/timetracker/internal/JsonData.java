@@ -44,10 +44,11 @@ public class JsonData {
     }
 
     public boolean userExists(String name) {
-        return !users.has(name);
+        return users.has(name);
     }
 
     public void createUser(String name) {
+        System.out.println(name);
         users.put(name, new JSONObject()
                 .put("logged_in", false)
                 .put("total_time", 0)
